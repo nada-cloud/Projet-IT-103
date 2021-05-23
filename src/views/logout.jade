@@ -1,0 +1,23 @@
+extends layout
+block body
+    div.container
+        div.row
+            div.col
+                div.header
+                    nav.navbar.navbar-expand-lg.navbar-light.home
+                        div.container-fluid 
+                            a.navbar-brand(href='#') Reddit
+                            button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation")
+                                span.navbar-toggler-icon
+                            #navbarSupportedContent.collapse.navbar-collapse
+                                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                                    li.nav-item 
+                                        a.nav-link.active(aria-current="page" href="./") Home 
+                                    li.nav-item 
+                                        a.nav-link(href="login") Log in
+                                    li.nav-item 
+                                        a.nav-link(href="signup") Sign up
+        div.row
+                div.bg-light.p-5.mt-5.mb-3
+                    div.container
+                        div.alert.alert-success(role='alert') You successfully logged out !

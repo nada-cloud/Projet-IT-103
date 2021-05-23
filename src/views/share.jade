@@ -1,0 +1,42 @@
+extends layout
+block body
+    div.container-sm
+        div.row
+            div.col
+                div.header
+                    nav.navbar.navbar-expand-lg.navbar-light.home
+                        div.container-fluid 
+                            a.navbar-brand(href='#') Reddit
+                            button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation")
+                                span.navbar-toggler-icon
+                            #navbarSupportedContent.collapse.navbar-collapse
+                                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                                    li.nav-item 
+                                        a.nav-link.active(aria-current="page" href="./") Home
+                                    li.nav-item 
+                                        a.nav-link(href="profile") Profile
+                                    li.nav-item 
+                                        a.nav-link(href="logout") Log out
+            div.row
+                div.col-8
+                    div.container.border.border-dark.bg-light
+                        form(method="POST" action="/share")
+                            .mb-3
+                            label.form-label(for='share') Share link
+                                input(type="text" id="share" name="share" placeholder='What is going on today ?')
+                            div.flex.p-2
+                                input(type="text" value="title" placeholder='Title')
+                            div.flex.p-2
+                                input(type="submit" value="Share")
+                div.col-4
+                    div.container.trend.shadow.p-3.mb-5.rounded
+                        p partie trend
+            
+            div.row 
+                iv.container.border.border-dark.bg-light
+                    p=post.content
+
+
+                        
+
+                        //-  textarea#exampleFormControlTextarea1.form-control(rows='3')

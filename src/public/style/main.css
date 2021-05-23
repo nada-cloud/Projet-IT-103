@@ -1,0 +1,99 @@
+.header {
+    border-bottom: 1px solid #000000;
+    margin-bottom: 30px;
+}
+
+.home{
+    background-color: rgb(81, 164, 247);
+}
+
+.trend{
+    background-color: rgb(253, 193, 240);
+    overflow: visible;
+    height: 300px;
+    
+}
+
+
+.login_card {
+    margin-bottom: 30px;
+    background-color:rgba(169, 231, 238, 0.94);
+    height:400px;
+    width: 380px;
+    position: relative;      
+}
+
+.signup_card {
+    margin-bottom: 30px;
+    background-color:rgba(169, 231, 238, 0.94);
+    height:500px;
+    width: 400px;
+    position: relative;      
+}
+
+
+.d {
+    margin-top:2cm;
+    align-items: center;
+        
+}
+
+.form{
+    top: 50%;
+}
+
+.d_logo {
+    height: 350px;
+    width: 350px;
+    border-radius: 70%;
+    border: 2px solid white;
+    padding-left: 50;
+}
+
+.d_logo_container {
+    position: relative;
+    height: 370px;
+    width: 370px;
+    left: 100;
+    border-radius: 70%;
+    background: #60a3bc;
+    padding: 10px;
+    text-align: center;
+}
+
+.profile{
+    height: 150px;
+    width: 150px;
+    border-radius: 60%;
+    border: 2px solid white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile_container{
+    position: relative;
+    height: 500px;
+    left: 100;
+    background: #60a3bc;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.post{
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: moccasin;
+}
+
+.d_card {
+    height: 150px;
+    width: 150px;
+    border-radius: 70%;
+    border: 2px solid white;
+    padding-left: 50;
+    margin-left: auto;
+    margin-right: auto;
+}

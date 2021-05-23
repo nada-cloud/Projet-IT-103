@@ -1,0 +1,62 @@
+extends layout
+block body
+    div.container
+        div.row
+            div.col
+                div.header
+                    nav.navbar.navbar-expand-lg.navbar-light.home
+                        div.container-fluid 
+                            a.navbar-brand(href='#') Reddit
+                            button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation")
+                                span.navbar-toggler-icon
+                            #navbarSupportedContent.collapse.navbar-collapse
+                                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                                    li.nav-item 
+                                        a.nav-link.active(aria-current="page" href="./") Home 
+                                    li.nav-item 
+                                        a.nav-link(href="profile") Profile
+                                    li.nav-item 
+                                        a.nav-link(href="signup") Sign up
+        div.row
+            div.bg-light.p-5.mt-5.mb-3
+                div.container
+                    h3.text-center Reddit signup
+            div.container
+                div.row
+                    div.col 
+                        .d_logo_container 
+                            img.d_logo.float-md-end(src='https://i.pinimg.com/564x/e5/5f/6f/e55f6f3e273d087eee375402b9549dc6.jpg' alt='Logo').col-4.align-self-center
+                    div.col
+                        div.text-center.signup_card.mt-6.shadow.rounded.center
+                            div.container-fluid
+                                .d-flex.justify-content-center.align-items-center.container
+                                    if !logged
+                                        if errors
+                                            div.p-2.alert.alert-danger
+                                                h6=errors
+                                        form(method="POST" action="/signup")
+                                            div.p-2.mt-5.mb-3
+                                                label(for="pseudo") Pseudo
+                                                    input(type="pseudo" id="pseudo" name="pseudo" placeholder='pseudo')
+                                                #passwordHelpBlock.form-text your pseudo must be at least 4 characters long
+                                            div.p-2.mb-3
+                                                label(for="email") Email
+                                                    input(type="email" id="email" name="email" placeholder='example@mail.com')
+                                            div.p-2.mb-3
+                                                label(for="password") Password
+                                                    input(type="password" id="password" name="password")
+                                                #passwordHelpBlock.form-text your password must be at least 6 characters long
+                                            div.flex.p-2
+                                                input(type="submit" value="Sign up")
+                                            div.mt-4.d-flex.justify-content-center.links You have an account ?
+                                            a.ml-2(href='/login') Log in
+
+                                    //- else 
+                                    //-     redirection acceuil
+
+
+                                
+                    
+                            
+
+                            
